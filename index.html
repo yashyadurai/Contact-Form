@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="mainContainer">
+        <div id="secondMainContainer">
+            <form method="post">
+            <h3>Contact Us</h3>
+            <fieldset id="names">
+                <label for="firstName" class="namess">First Name <input type="text" name="firstName" id="firstName" required></label>
+                <label for="lastName" class="namess">Last Name <input type="text" name="lastName" id="lastName" required></label>
+            </fieldset>
+            <fieldset>
+                <label for="emailAddr" class="emaillll">Email Address <input type="email" name="emailAddr" id="emailAddr" required></label>
+            </fieldset>
+            <fieldset id="qry">
+                    <legend>Query Type</legend>
+                    <label for="queryType"><input type="radio" name="enquiry" id="queryType">General Enquiry</label>
+                    <label for="SupportEnquiry"><input type="radio" name="enquiry" id="SupportEnquiry" checked>Support Enquiry</label>
+            </fieldset>
+            <fieldset>
+                <label for="msg">Message
+                    <textarea name="msg" id="msg"></textarea>
+                </label>
+            </fieldset>
+            <label for="terms">
+                <input type="checkbox" name="terms" id="terms" required>I consent to beign contacted by the team
+            </label>
+            <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
