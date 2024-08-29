@@ -1,21 +1,43 @@
 /* textarea {
     resize: none;
 }; */
+*{
+    box-sizing: border-box;
+}
+:root{
+    --Greenlighter:hsl(148, 38%, 91%);
+    --Greenmedium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Greymedium: hsl(186, 15%, 59%);
+    --Greydarker: hsl(187, 24%, 22%);
+}
+body{
+    background-color: var(--Greenlighter);
+}
 #mainContainer{
     position: relative;
     height: 100vh;
 }
 #secondMainContainer{
-    width: 60%;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 2%;
+
 }
 #names{
-    border: red solid 1px;
+    display: flex;
+    flex-direction: row;
 }
-.names{
-    
+fieldset {
+    border: none;
 }
-
+input {
+    border-radius: 4px;
+    border: solid 1px;
+}
