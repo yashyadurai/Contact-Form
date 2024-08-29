@@ -1,6 +1,3 @@
-/* textarea {
-    resize: none;
-}; */
 *{
     box-sizing: border-box;
 }
@@ -26,7 +23,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--White);
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 2%;
 
 }
@@ -36,8 +33,44 @@ body{
 }
 fieldset {
     border: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 input {
     border-radius: 4px;
-    border: solid 1px;
+    border: solid 1px var(--Greenmedium);
+    padding: 4%;
+    margin-top: 15px;
+    font-size: medium;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.radioBtn{
+    border: solid 1px var(--Greenmedium);
+    min-width: 48%;
+    padding: 2% 2% 2% 3%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+input[type="radio"]{
+    margin-top: 0;
+}
+#radioBtn1{
+    margin-right: 2%;
+}
+#emailAddr{
+    padding: 2% 2% 2% 3%;
+}
+input[type="submit"]{
+    background-color: var(--Greenmedium);
+    color: var(--White);
+    display: block;
+    min-width: calc(98% + 6px);
+    padding: 2%;
+    border-radius: 5px;
 }

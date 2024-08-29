@@ -11,23 +11,30 @@
         <div id="secondMainContainer">
             <form method="post">
                 <h3 style="margin-top: 0px;margin-bottom: 2%;">Contact Us</h3>
-            <fieldset id="names" style="display: flex;" class="">
-                <label for="firstName" class="namess" style="display: flex;flex-direction: column;">First Name <input type="text" name="firstName" id="firstName" required=""></label>
-                <label for="lastName" class="namess" style="display: flex;flex-direction: column;">Last Name <input type="text" name="lastName" id="lastName" required=""></label>
+            <fieldset id="names" style="display: flex; flex-wrap: wrap;" class="">
+                <label for="firstName" class="namess" style="flex: 1; min-width: 48%; margin-right: 2%; display: flex;flex-direction: column">
+                    First Name 
+                    <input type="text" name="firstName" id="firstName" required="">
+                </label>
+                <label for="lastName" class="namess" style="flex: 1; min-width: 48%; display: flex;flex-direction: column">
+                    Last Name 
+                    <input type="text" name="lastName" id="lastName" required="">
+                </label>
             </fieldset>
             <fieldset>
                 <label for="emailAddr" class="emaillll" style="display: flex;flex-direction: column;">Email Address <input type="email" name="emailAddr" id="emailAddr" required=""></label>
             </fieldset>
             <fieldset id="qry" style="display: flex;">
                 <legend>Query Type</legend>
-                <label for="queryType" style="width: 50%;"><input type="radio" name="enquiry" id="queryType">General Enquiry</label>
-                <label for="SupportEnquiry"><input type="radio" name="enquiry" id="SupportEnquiry" checked="">Support Enquiry</label>
+                <label for="queryType" class="radioBtn" id="radioBtn1"><input type="radio" name="enquiry" id="queryType">General Enquiry</label>
+                <label for="SupportEnquiry" class="radioBtn" ><input type="radio" name="enquiry" id="SupportEnquiry" checked="">Support Enquiry</label>
             </fieldset>
-            <fieldset style="display: flex;">
-                <label for="msg" style="display: flex;flex-direction: column;">Message
-                    <textarea name="msg" id="msg" style="resize: none;"></textarea>
+            <fieldset style="display: flex; width: 100%;">
+                <label for="msg" style="flex: 1; display: flex; flex-direction: column;">
+                    Message
+                    <textarea name="msg" rows="5" id="msg" style="resize: none; min-width: calc(98% + 4px); border: solid 1px var(--Greenmedium); margin-right: 2%; border-radius: 7px; padding: 2%; margin-top: 10px;"></textarea>
                 </label>
-            </fieldset>
+            </fieldset>            
             <label for="terms">
                 <input type="checkbox" name="terms" id="terms" required="">I consent to beign contacted by the team
             </label>
