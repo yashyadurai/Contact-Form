@@ -38,7 +38,7 @@ body{
     transform: translate(-50%, -50%);
     background-color: var(--White);
     border-radius: 24px;
-    padding: 2%;
+    padding: 3%;
 
 }
 #names{
@@ -94,6 +94,8 @@ input[type="radio"]{
 #terms{
     accent-color: var(--Greenmedium);
     margin-right: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 input[type="submit"]{
     background-color: var(--Greenmedium);
@@ -101,5 +103,11 @@ input[type="submit"]{
     display: block;
     min-width: calc(98% + 6px);
     padding: 2%;
-    border-radius: 5px;
+    border-radius: 9px;
+}
+input[type="submit"]:hover{
+    background-color: #063f36;
+}
+input[type="checkbox"]{
+    transform: scale(1.2);
 }
