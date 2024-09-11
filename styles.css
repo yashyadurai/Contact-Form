@@ -111,3 +111,18 @@ input[type="submit"]:hover{
 input[type="checkbox"]{
     transform: scale(1.2);
 }
+
+@media (max-width: 1000px) {
+    #secondMainContainer{
+        width: 95%;
+        height: 100%;
+        padding: 22px;
+        border-radius: 15px;
+    }
+    #names{
+        flex-direction: column;
+    }
+    #qry{
+        flex-direction: column;
+    }
+}
