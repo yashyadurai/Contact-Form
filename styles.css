@@ -119,9 +119,8 @@ input[type="checkbox"]{
         padding: 22px;
         border-radius: 15px;
     }
-    #names{
-        flex-direction: column;
-    }
+    /* #names{
+    } */
     #qry{
         flex-direction: column;
     }
