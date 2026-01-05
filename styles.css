@@ -115,7 +115,6 @@ input[type="checkbox"]{
 @media (max-width: 926px){
     #secondMainContainer{
         width: 95%;
-        height: 100%;
         padding: 22px;
         border-radius: 15px;
     }
